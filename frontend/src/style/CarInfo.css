@@ -1,0 +1,174 @@
+/* .sin-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  .sin-card{
+    overflow: hidden;
+    border: solid 1px transparent;
+    box-shadow:  rgba(247, 247, 247, 0.05)5px 5px 30px 0px,
+    rgba(255, 255, 255, 0.08) 0px 0px 0px 0.1px;
+    border-radius: 25px;
+  }
+  .sin-card-img {
+    height: 400px; 
+    overflow: hidden;
+    text-align: center;
+    & img {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 0 2rem 2rem #fff);
+    }
+  }
+
+  .sin-card-details {
+    max-height: 250px;
+       padding: 1rem 1.4rem 0.5rem 1.4rem;
+ 
+       & .grid p {
+         font-size: 1rem;
+       
+       }
+ 
+       & h2 {
+         font-size: auto;
+         margin: 1rem 0 1rem 0;
+       }
+        & a{
+         padding-top: 30px;
+       } 
+      
+     }
+
+     .sin-grid {
+      display: flex;
+      justify-content: space-between;
+     } */
+
+     .section-CarInfo {
+      padding-top: 40px;
+      & .grid {
+        align-items: center;
+      }
+    .Car-content {
+      & p {
+        margin: 1rem 0 1rem 0;
+       &:first-child {
+         margin: 0 0 1rem 0;
+       }
+      }
+    }
+    .Car-image {
+      display: flex;
+      justify-content: center;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    }
+
+.squar {
+    
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* background-color: rgba(232, 37, 37, 0.579); */
+      font-size: 20px;
+    }
+
+.date-time{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  /* align-items: center;
+  justify-content: space-between; */
+
+}
+
+.cal{
+  width: 48%;
+}
+
+.userinfo{
+  /* padding: 3%; */
+  width: 90%;
+display: flex;
+flex-direction: column;
+gap: 20px;
+  
+}
+   .input {
+    padding-left: 10px;
+    height: 30px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(83, 83, 83, 0.866);
+    border: 1px solid transparent;
+    border-radius: 5px;
+  
+  }
+
+  .date {
+    /* margin-right: 20px; */
+    text-align: center;
+    width: 100%;
+    color: rgb(250, 250, 250);
+    background-color: rgba(83, 83, 83, 0.866);
+    border: 1px solid transparent;
+    border-radius: 5px;
+  
+  }
+ 
+
+.bill{
+ width: 90%;
+  border-radius: 15px;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+& p {
+  background-color: rgba(83, 83, 83, 0.866);
+  height: auto;
+  row-gap: 20px;
+  width: 100%;
+  /* color: black; */
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  /* box-shadow:  rgba(80, 80, 80, 0.84)0px 0px 10px 0px,
+      rgba(255, 255, 255, 0) 0px 0px 0px 0.1px;
+ */
+}
+}
+
+.filldetail{
+  padding: 3%;
+  overflow: hidden;
+  width:50%;
+  border-radius: 20px;
+  background-color: rgba(74, 74, 74, 0.596);
+  box-shadow:  rgba(64, 64, 64, 0.175)10px 10px 20px 5px,
+      rgba(2, 2, 2, 0.373) 0px 0px 0px 0.1px;
+}
+.Orderinfo{
+  /* padding: 5%; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  /* background-color: rgb(79, 169, 248); */
+  
+}
+.heding{
+  color: rgb(255, 254, 254);
+  text-align: center;
+}

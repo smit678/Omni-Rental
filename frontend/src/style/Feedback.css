@@ -1,0 +1,38 @@
+.section-feedback {
+    & h1 {
+        margin-bottom: 2.2rem;
+      }
+  
+    & .container {
+      padding-top: 3.2rem;
+    }
+    & .feedback-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  
+    & .section-form {
+      & form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      & label {
+        display: block;
+        margin-bottom: 0.2rem;
+        text-transform: capitalize;
+      }
+  
+      & input,
+      textarea {
+        width: 60%;
+        padding: 0.1rem 0.6rem;
+      }
+    }
+  }
+  

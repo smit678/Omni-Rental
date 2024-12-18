@@ -1,0 +1,32 @@
+//JWT AUTHENTICATION - TO GET THE CURRENTLY LOGGEDIN USER DATA
+
+// const userAuthentication = async() => {
+//     try {
+//         const response = await fetch("http://localhost:5000/api/user",{
+//             method:"GET",
+//             headers:{
+//                 Authorization : `Bearer ${token}`,
+//             }
+//         })
+//         // await axios.get(`http://localhost:5000/api/user`,user,
+//         //     {Headers:{
+//         //         Authorization:`Bearer ${token}`
+//         //     },
+           
+//         //      });
+//              if(response.ok){
+//                 const data = await response.json();
+//                 console.log("user data",data.userData);
+//                 setUser(data.userData);
+//              }
+//     } catch (error) {
+//         console.log("Error fetching user data");
+        
+//     }
+
+   
+// };
+// useEffect(()=>{
+//     userAuthentication();
+// },[]);
+

@@ -1,0 +1,31 @@
+.section-analytics {
+    padding: 5.6rem 0;
+   
+    & .container{
+         margin: 0 5rem;
+         background-color:var(--bg-color);
+         border-radius: 1rem;
+     }
+     & .grid{
+       color: var(--dark-color);
+       gap: 0;
+       padding: 30px;
+   
+       & .div-1{
+         text-align: center;
+         border-right: 0.2rem solid var(--dark-color);
+   
+           &:last-child {
+              border: none;
+         }
+           & h2 {
+             font-size: 2.8rem;
+             font-weight: 500;
+           }
+           & p {
+             text-transform: capitalize;
+             font-weight: 500;
+           }
+       }
+     }
+   }
