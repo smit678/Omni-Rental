@@ -23,6 +23,6 @@ app.use(errorMiddleware);
 
 const port = 5000 ;
 dbConnect().then(()=>{app.listen(port, ()=>{
-    console.log(`server is running : http://localhost:${port}/api`);
+    console.log(`server is running : http://192.168.1.15:${port}/api`);
     });
 });

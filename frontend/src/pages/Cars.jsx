@@ -13,7 +13,7 @@ const Cars = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/cars")
+      .get("http://192.168.1.15:5000/api/cars")
       .then((res) => setCarList(res.data));
   }, []);
 

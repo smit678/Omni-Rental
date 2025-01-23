@@ -10,7 +10,7 @@ const Analytics = () => {
   const [brand, setBrand] = useState(null);
   useEffect(() => {
    axios
-      .get("http://localhost:5000/api/cars")
+      .get("http://192.168.1.15:5000/api/cars")
       .then((res) => setBrand(res.data.length));
   }, []);        
 
@@ -18,7 +18,7 @@ const Analytics = () => {
  const [user, setUser]= useState(null);
 
 useEffect( ()=>{
-  axios.get("http://localhost:5000/api/user")
+  axios.get("http://192.168.1.15:5000/api/user")
        .then((res)=>{setUser(res.data.length);
   })
 },[]);

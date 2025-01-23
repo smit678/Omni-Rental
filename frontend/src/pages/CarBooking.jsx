@@ -33,7 +33,7 @@ let from = a.fromdate
 
  const orderDetails = async ()=>{
   try {
-    await axios.get(`http://localhost:5000/api/orders/${params.id}`)
+    await axios.get(`http://192.168.1.15:5000/api/orders/${params.id}`)
             .then((res)=>{ setA(res.data)} ,setTime(t))
             
   } catch (error) {
@@ -45,7 +45,7 @@ let from = a.fromdate
 
 
  if(isLoading === "flase"){
-  axios.get(`http://localhost:5000/api/cars/${id}`)
+  axios.get(`http://192.168.1.15:5000/api/cars/${id}`)
   .then((res)=>{ 
                   setCarInfo(res.data)
                  setIsLoading("true")
@@ -54,7 +54,7 @@ let from = a.fromdate
   // const getSingleCar = async ()=>{
   //   try {
       
-  //           await axios.get(`http://localhost:5000/api/cars/${id}`)
+  //           await axios.get(`http://192.168.1.15:5000/api/cars/${id}`)
   //           .then((res)=>{ setCarInfo(res.data)
 
   //           })

@@ -12,7 +12,7 @@ const AdminCars = () => {
     
     const getAllCarsData = async()=>{
         try {
-            await axios.get("http://localhost:5000/api/admin/cars",{headers:{Authorization:authorizationToken},})
+            await axios.get("http://192.168.1.15:5000/api/admin/cars",{headers:{Authorization:authorizationToken},})
            .then((response)=>{setCars(response.data)})
             
                            
@@ -27,7 +27,7 @@ const AdminCars = () => {
   const deleteCar = async (id)=>{
     try {
       
-            await axios.delete(`http://localhost:5000/api/admin/cars/delete/${id}`,{headers:{Authorization:authorizationToken},})
+            await axios.delete(`http://192.168.1.15:5000/api/admin/cars/delete/${id}`,{headers:{Authorization:authorizationToken},})
             .then((res)=>{console.log(res.data)})
             getAllCarsData();
       

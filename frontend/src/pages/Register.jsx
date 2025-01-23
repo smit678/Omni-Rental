@@ -37,7 +37,7 @@ const handleSubmit = async (e)=>{
   
   
   try {
-    const response = await axios.post(`http://localhost:5000/api/register`,user);
+    const response = await axios.post(`http://192.168.1.15:5000/api/register`,user);
     
     // const Data = await response;
      console.log(response);
@@ -57,7 +57,7 @@ const handleSubmit = async (e)=>{
     }
                     
     
-            //  await axios.post(`http://localhost:5000/api/register`, user)
+            //  await axios.post(`http://192.168.1.15:5000/api/register`, user)
             //          .then((res)=>{console.log(res);
                      
             //           if(res.data.value) {

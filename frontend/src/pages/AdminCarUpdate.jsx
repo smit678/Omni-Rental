@@ -28,7 +28,7 @@ const AdminCarUpdate = () => {
         const getSingleCarData = async ()=>{
             try {
               
-                    await axios.get(`http://localhost:5000/api/admin/cars/${params.id}`,{headers:{Authorization:authorizationToken},})
+                    await axios.get(`http://192.168.1.15:5000/api/admin/cars/${params.id}`,{headers:{Authorization:authorizationToken},})
                     .then((res)=>{setSingleCar(res.data)})
                   
                   
@@ -59,7 +59,7 @@ const AdminCarUpdate = () => {
                 
                 try {
                    
-                    await axios.patch(`http://localhost:5000/api/admin/cars/update/${params.id}`,singleCar,{headers:{Authorization:authorizationToken},})
+                    await axios.patch(`http://192.168.1.15:5000/api/admin/cars/update/${params.id}`,singleCar,{headers:{Authorization:authorizationToken},})
                     .then((res)=>{console.log(res)})
                     navigate("/admin/cars")
                     toast.success("Updated successfuly")

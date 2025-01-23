@@ -40,7 +40,7 @@ if(userData && user){
 
       // console.log(feedback);
 
-      await axios.post(`http://localhost:5000/api/feedback`, feedback, {Header:{"Content-Type": "application/json"}})
+      await axios.post(`http://192.168.1.15:5000/api/feedback`, feedback, {Header:{"Content-Type": "application/json"}})
       .then((res)=>{console.log("feedback send success");
       if(res.status){
         toast.success("hello,feedback send  successful");

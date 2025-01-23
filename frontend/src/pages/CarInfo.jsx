@@ -120,7 +120,7 @@ const handleSubmit = async(e)=>{
   
  try {
              
-    await axios.post(`http://localhost:5000/api/cars/${params.id}/booking`,order)
+    await axios.post(`http://192.168.1.15:5000/api/cars/${params.id}/booking`,order)
     .then((res)=>{
       console.log(res.data)
       
@@ -168,7 +168,7 @@ const handleSubmit = async(e)=>{
   const getSingleCar = async ()=>{
     try {
       
-            await axios.get(`http://localhost:5000/api/cars/${params.id}`)
+            await axios.get(`http://192.168.1.15:5000/api/cars/${params.id}`)
             .then((res)=>{
               console.log(res);
               setSingleCar(res.data)

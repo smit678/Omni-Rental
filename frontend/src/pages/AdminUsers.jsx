@@ -11,7 +11,7 @@ const AdminUsers = () => {
   
   const getAllUsersData = async()=>{
     try {
-        await axios.get("http://localhost:5000/api/admin/users",{headers:{Authorization:authorizationToken},})
+        await axios.get("http://192.168.1.15:5000/api/admin/users",{headers:{Authorization:authorizationToken},})
        .then((response)=>{setUdata(response.data)})
         
                        
@@ -25,7 +25,7 @@ const AdminUsers = () => {
   const deleteUser = async (id)=>{
     try {
       
-            await axios.delete(`http://localhost:5000/api/admin/users/delete/${id}`,{headers:{Authorization:authorizationToken},})
+            await axios.delete(`http://192.168.1.15:5000/api/admin/users/delete/${id}`,{headers:{Authorization:authorizationToken},})
             .then((res)=>{console.log(res.data)})
             getAllUsersData();
       

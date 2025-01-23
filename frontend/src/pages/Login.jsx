@@ -34,7 +34,7 @@ const handleSubmit =async (e)=>{
   //console.log(user);
 
   try {
-    const response = await axios.post(`http://localhost:5000/api/login`,user);
+    const response = await axios.post(`http://192.168.1.15:5000/api/login`,user);
     if (response.status) {
       storeTokenInLS(response.data.token);
       setUser({email:"", password:""});
@@ -48,7 +48,7 @@ const handleSubmit =async (e)=>{
     toast.error(e.response.data.extraDetails ? e.response.data.extraDetails : e);
   }
                 
-//   await axios.post("http://localhost:5000/api/login", user)
+//   await axios.post("http://192.168.1.15:5000/api/login", user)
 //                  .then((res)=>{console.log("login success");
 //                   if(res.status){
 //                     storeTokenInLS(res.data.token);

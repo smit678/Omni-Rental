@@ -39,7 +39,7 @@ const LogoutUser = ()=>{
 const userAuthentication = async()=>{
 try {
     setIsLoading(true);
-    const response = await axios.get("http://localhost:5000/api/userd",{headers:{Authorization:`Bearer ${token}`,},});
+    const response = await axios.get("http://192.168.1.15:5000/api/userd",{headers:{Authorization:`Bearer ${token}`,},});
     if(response.status){
          const data = await response.data;
         // console.log("user data",data.userData);

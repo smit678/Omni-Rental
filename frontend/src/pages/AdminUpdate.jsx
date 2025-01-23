@@ -20,7 +20,7 @@ const AdminUpdate = () => {
   const getSingleUserData = async ()=>{
     try {
       
-            await axios.get(`http://localhost:5000/api/admin/users/${params.id}`,{headers:{Authorization:authorizationToken},})
+            await axios.get(`http://192.168.1.15:5000/api/admin/users/${params.id}`,{headers:{Authorization:authorizationToken},})
             .then((res)=>{setData(res.data)
              // console.log(Data)
                          }
@@ -57,7 +57,7 @@ const handleSubmit = async(e)=>{
     
     try {
        
-        await axios.patch(`http://localhost:5000/api/admin/users/update/${params.id}`,Data,{headers:{Authorization:authorizationToken},})
+        await axios.patch(`http://192.168.1.15:5000/api/admin/users/update/${params.id}`,Data,{headers:{Authorization:authorizationToken},})
         .then((res)=>{console.log(res)})
         
          toast.success("Updated successfuly")
